@@ -1,0 +1,21 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<input [(ngModel)]="text">
+<br>
+<button (click)="input(7)">7</button>
+<button (click)="input(8)">8</button>
+<button (click)="input(9)">9</button><br>
+<button (click)="input(4)">4</button>
+<button (click)="input(5)">5</button>
+<button (click)="input(6)">6</button><br>
+<button (click)="input(1)">1</button>
+<button (click)="input(2)">2</button>
+<button (click)="input(3)">3</button><br>
+<button (click)="input('-')">-</button>
+<button (click)="input('+')">+</button>
+<button (click)="input('*')">*</button>
+<button (click)="result()">=</button>
+<router-outlet>
+</router-outlet>
