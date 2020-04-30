@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'my-app',
@@ -6,26 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
+  constructor(private router: Router){}
+
   name = 'Angular';
-
-  a = 0;
-  b = 0;
-  op;
-  text = '';
-
-  input(data){
-    if(data.isInteger()){
-      if(this.a != 0){
-        this.b = data;
-        this.text += data;
-      }
-      else {
-        this.a = data;
-        this.text += data;
-      }
-    }else{
-      this.op = data;
-      this.text += data;
-    }
-  }
 }

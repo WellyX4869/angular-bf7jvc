@@ -9,7 +9,8 @@ import { ResultComponent } from './result/result.component';
 
 const ROUTES:Routes=[
   {path: '', component:HomeComponent},
-  {path: 'result', component:ResultComponent}
+  {path: 'result', component:ResultComponent},
+  {path: 'result/:res', component: ResultComponent}
 ]
 
 @NgModule({
